@@ -1,0 +1,910 @@
+/* =====================================================
+   CONFIGURAÇÕES GERAIS
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #1f2937;
+    line-height: 1.6;
+    transition: background 0.3s, color 0.3s;
+}
+
+a {
+    color: inherit;
+}
+
+button,
+input {
+    font-family: inherit;
+}
+
+
+/* =====================================================
+   CABEÇALHO
+===================================================== */
+
+header {
+    background: linear-gradient(135deg, #0759c7, #0d78e8);
+    color: white;
+    padding: 25px 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+nav a,
+nav button {
+    border: none;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    padding: 10px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+nav a:hover,
+nav button:hover {
+    background: rgba(255, 255, 255, 0.28);
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   CONTEÚDO
+===================================================== */
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 35px auto;
+}
+
+section {
+    margin-bottom: 35px;
+}
+
+.cabecalho-pagina {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.cabecalho-pagina h2 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.cabecalho-pagina p {
+    color: #667085;
+}
+
+
+/* =====================================================
+   HERO / INÍCIO
+===================================================== */
+
+.hero {
+    background: linear-gradient(135deg, #ffffff, #eef6ff);
+    border-radius: 20px;
+    padding: 55px 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
+}
+
+.hero h2 {
+    font-size: 36px;
+    color: #0759c7;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 750px;
+    margin: auto;
+    font-size: 18px;
+    color: #526071;
+}
+
+.hero-acoes {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.botao-principal {
+    display: inline-block;
+    background: #0759c7;
+    color: white;
+    text-decoration: none;
+    padding: 13px 22px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.botao-principal:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 18px rgba(7, 89, 199, 0.3);
+}
+
+
+/* =====================================================
+   CARDS
+===================================================== */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+    transition: 0.25s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #0759c7;
+}
+
+.card p {
+    color: #667085;
+}
+
+.card-materia {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-materia::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: #0759c7;
+}
+
+
+/* =====================================================
+   DASHBOARD
+===================================================== */
+
+.dashboard {
+    background: white;
+    border-radius: 18px;
+    padding: 25px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+    margin-bottom: 30px;
+}
+
+.dashboard h2 {
+    margin-bottom: 20px;
+}
+
+.progresso-geral-box {
+    background: #f0f6ff;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.numero-grande {
+    font-size: 40px;
+    font-weight: bold;
+    color: #0759c7;
+}
+
+.barra-dashboard-container {
+    width: 100%;
+    height: 16px;
+    background: #dbe7f5;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 12px;
+}
+
+.barra-dashboard {
+    height: 100%;
+    width: 0;
+    background: linear-gradient(90deg, #0759c7, #18a0fb);
+    border-radius: 20px;
+    transition: width 0.8s ease;
+}
+
+.materias-dashboard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.dashboard-materia {
+    background: #fafcff;
+    border: 1px solid #e1e8f0;
+    border-radius: 14px;
+    padding: 18px;
+    transition: 0.2s;
+}
+
+.dashboard-materia:hover {
+    transform: translateY(-3px);
+    border-color: #9ec8f5;
+}
+
+.dashboard-materia h3 {
+    margin-bottom: 5px;
+    color: #0759c7;
+}
+
+.progresso-titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 7px;
+    font-size: 14px;
+}
+
+.numero-progresso {
+    font-weight: bold;
+}
+
+.barra-materia {
+    height: 10px;
+    width: 0;
+    background: linear-gradient(90deg, #0759c7, #18a0fb);
+    border-radius: 20px;
+    transition: width 0.8s ease;
+}
+
+
+/* =====================================================
+   PESQUISA
+===================================================== */
+
+.pesquisa {
+    margin-bottom: 25px;
+}
+
+#campo-pesquisa {
+    width: 100%;
+    padding: 14px 18px;
+    border: 1px solid #d0d7e2;
+    border-radius: 12px;
+    outline: none;
+    font-size: 16px;
+    background: white;
+    color: #222;
+}
+
+#campo-pesquisa:focus {
+    border-color: #0759c7;
+    box-shadow: 0 0 0 3px rgba(7, 89, 199, 0.1);
+}
+
+
+/* =====================================================
+   ABAS
+===================================================== */
+
+.abas {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.aba {
+    padding: 12px 18px;
+    border: none;
+    background: #e7eef7;
+    color: #26364a;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.aba:hover {
+    background: #d5e4f5;
+}
+
+.aba.ativo {
+    background: #0759c7;
+    color: white;
+}
+
+.painel {
+    display: none;
+}
+
+.painel.ativo {
+    display: block;
+}
+
+
+/* =====================================================
+   TÓPICOS
+===================================================== */
+
+.topico {
+    background: white;
+    border-radius: 15px;
+    padding: 22px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid #0759c7;
+}
+
+.topico h3 {
+    color: #0759c7;
+    margin-bottom: 8px;
+}
+
+.topico p {
+    color: #4b5563;
+}
+
+
+/* =====================================================
+   QUIZ
+===================================================== */
+
+.questao {
+    background: white;
+    padding: 22px;
+    border-radius: 15px;
+    margin-bottom: 18px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.questao h3 {
+    margin-bottom: 15px;
+}
+
+.questao label {
+    display: block;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.questao label:hover {
+    background: #f0f6ff;
+}
+
+.botao {
+    border: none;
+    background: #0759c7;
+    color: white;
+    padding: 13px 22px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.botao:hover {
+    background: #064da9;
+    transform: translateY(-2px);
+}
+
+.resultado {
+    margin-top: 25px;
+    padding: 25px;
+    border-radius: 15px;
+    background: #eaf8ef;
+    border: 1px solid #9bd3ad;
+    text-align: center;
+}
+
+.resultado.incompleto {
+    background: #fff7e6;
+    border-color: #f3c36a;
+}
+
+.nota-quiz {
+    font-size: 45px;
+    font-weight: bold;
+    color: #0759c7;
+    margin: 10px 0;
+}
+
+.barra-quiz {
+    width: 100%;
+    height: 12px;
+    background: #dbe2ea;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.barra-quiz div {
+    height: 100%;
+    background: #0759c7;
+    border-radius: 20px;
+    transition: width 0.7s;
+}
+
+
+/* =====================================================
+   CHECKLIST
+===================================================== */
+
+#checklist {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+#checklist label {
+    display: block;
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    background: #f6f8fb;
+    cursor: pointer;
+}
+
+#checklist label:hover {
+    background: #edf4fc;
+}
+
+#checklist input {
+    margin-right: 10px;
+}
+
+.progresso-geral {
+    margin-bottom: 20px;
+}
+
+#barra-progresso {
+    width: 0;
+    height: 12px;
+    background: #0759c7;
+    border-radius: 20px;
+    transition: width 0.5s;
+}
+
+.mensagem-conclusao {
+    margin-top: 20px;
+    padding: 18px;
+    background: #eaf8ef;
+    border: 1px solid #9bd3ad;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.mensagem-conclusao strong,
+.mensagem-conclusao span {
+    display: block;
+}
+
+.mensagem-conclusao strong {
+    color: #16813b;
+    font-size: 18px;
+}
+
+.mensagem-conclusao span {
+    margin-top: 4px;
+}
+
+
+/* =====================================================
+   ÁREA DO ALUNO
+===================================================== */
+
+.perfil-aluno {
+    background: linear-gradient(135deg, #0759c7, #0d78e8);
+    color: white;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 25px rgba(7, 89, 199, 0.25);
+}
+
+.avatar {
+    width: 75px;
+    height: 75px;
+    background: white;
+    color: #0759c7;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    flex-shrink: 0;
+}
+
+.perfil-aluno h2 {
+    margin-bottom: 5px;
+}
+
+.perfil-aluno p {
+    opacity: 0.9;
+}
+
+.form-aluno {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.form-aluno input {
+    flex: 1;
+    padding: 13px;
+    border: 1px solid #d0d7e2;
+    border-radius: 10px;
+    outline: none;
+}
+
+.form-aluno input:focus {
+    border-color: #0759c7;
+}
+
+
+/* =====================================================
+   ESTATÍSTICAS
+===================================================== */
+
+.estatisticas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.estatistica {
+    background: white;
+    padding: 22px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.estatistica-icone {
+    font-size: 28px;
+    margin-bottom: 7px;
+}
+
+.estatistica strong {
+    display: block;
+    font-size: 28px;
+    color: #0759c7;
+}
+
+.estatistica span {
+    color: #667085;
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   CONQUISTAS
+===================================================== */
+
+.lista-conquistas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.conquista {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: white;
+    padding: 18px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid #f5b400;
+}
+
+.conquista-icone {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: #fff5cc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+    flex-shrink: 0;
+}
+
+.conquista h3 {
+    margin-bottom: 3px;
+}
+
+.conquista p {
+    color: #667085;
+    font-size: 14px;
+}
+
+.conquista-vazia,
+.historico-vazio {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    color: #667085;
+}
+
+
+/* =====================================================
+   HISTÓRICO
+===================================================== */
+
+.historico {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.historico-item {
+    background: white;
+    padding: 17px 20px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+.historico-item strong {
+    display: block;
+}
+
+.historico-item small {
+    color: #7b8794;
+}
+
+.historico-nota {
+    text-align: right;
+    font-weight: bold;
+    color: #0759c7;
+}
+
+.historico-nota span {
+    display: block;
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   BOTÃO VOLTAR
+===================================================== */
+
+.voltar {
+    display: inline-block;
+    margin-top: 20px;
+    color: #0759c7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.voltar:hover {
+    text-decoration: underline;
+}
+
+
+/* =====================================================
+   LIMPAR DADOS
+===================================================== */
+
+.area-perigo {
+    margin-top: 35px;
+    padding: 20px;
+    background: #fff4f4;
+    border: 1px solid #f2b8b8;
+    border-radius: 15px;
+}
+
+.botao-perigo {
+    margin-top: 10px;
+    border: none;
+    background: #c62828;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   RODAPÉ
+===================================================== */
+
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    color: #718096;
+    margin-top: 50px;
+}
+
+
+/* =====================================================
+   ANIMAÇÕES
+===================================================== */
+
+.animar {
+    animation: aparecer 0.6s ease both;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =====================================================
+   MODO ESCURO
+===================================================== */
+
+body.modo-escuro {
+    background: #101827;
+    color: #e8eef7;
+}
+
+body.modo-escuro .card,
+body.modo-escuro .dashboard,
+body.modo-escuro .dashboard-materia,
+body.modo-escuro .topico,
+body.modo-escuro .questao,
+body.modo-escuro #checklist,
+body.modo-escuro .estatistica,
+body.modo-escuro .conquista,
+body.modo-escuro .historico-item,
+body.modo-escuro .conquista-vazia,
+body.modo-escuro .historico-vazio {
+    background: #182235;
+    color: #e8eef7;
+}
+
+body.modo-escuro .hero {
+    background: linear-gradient(135deg, #182235, #1d2b42);
+}
+
+body.modo-escuro .hero p,
+body.modo-escuro .card p,
+body.modo-escuro .topico p,
+body.modo-escuro .conquista p,
+body.modo-escuro .estatistica span {
+    color: #b8c4d5;
+}
+
+body.modo-escuro .progresso-geral-box,
+body.modo-escuro #checklist label {
+    background: #202d43;
+}
+
+body.modo-escuro #campo-pesquisa,
+body.modo-escuro .form-aluno input {
+    background: #182235;
+    color: white;
+    border-color: #35445c;
+}
+
+body.modo-escuro .aba {
+    background: #29364c;
+    color: white;
+}
+
+body.modo-escuro .aba.ativo {
+    background: #0d78e8;
+}
+
+body.modo-escuro .area-perigo {
+    background: #2c1c20;
+    border-color: #713c43;
+}
+
+
+/* =====================================================
+   RESPONSIVIDADE
+===================================================== */
+
+@media (max-width: 800px) {
+    .estatisticas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cards,
+    .materias-dashboard,
+    .lista-conquistas {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+    header {
+        padding: 20px 12px;
+    }
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    main {
+        width: 94%;
+        margin: 25px auto;
+    }
+
+    .hero {
+        padding: 35px 20px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .perfil-aluno {
+        padding: 22px;
+    }
+
+    .form-aluno {
+        flex-direction: column;
+    }
+
+    .estatisticas {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .historico-item {
+        gap: 15px;
+    }
+
+    nav a,
+    nav button {
+        font-size: 14px;
+        padding: 8px 11px;
+    }
+}

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2º Ano - Linguagens</title>
+    <link rel="stylesheet" href="../../../assets/css/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>📚 2º Ano — Linguagens</h1>
+    <p>Revisão de Estudos SESI</p>
+</header>
+
+<main>
+
+    <div class="cabecalho-pagina">
+        <h2>Linguagens</h2>
+        <p>Revise os principais conteúdos de Linguagens do 2º ano.</p>
+    </div>
+
+    <section class="progresso">
+        <span id="porcentagem">0%</span>
+        <div class="barra">
+            <div id="barra-progresso"></div>
+        </div>
+    </section>
+
+    <div class="abas">
+        <button class="aba ativo" onclick="mostrarAba('conteudo', this)">
+            📖 Conteúdo
+        </button>
+
+        <button class="aba" onclick="mostrarAba('quiz', this)">
+            📝 Quiz
+        </button>
+
+        <button class="aba" onclick="mostrarAba('checklist', this)">
+            ✅ Checklist
+        </button>
+    </div>
+
+    <section id="conteudo" class="painel ativo">
+
+        <h2>📖 Conteúdos</h2>
+
+        <article>
+            <h3>📚 Literatura</h3>
+            <p>
+                A literatura é uma forma de expressão artística que utiliza
+                a linguagem para transmitir ideias, sentimentos e experiências.
+            </p>
+        </article>
+
+        <article>
+            <h3>🌹 Romantismo</h3>
+            <p>
+                O Romantismo valorizou a subjetividade, os sentimentos,
+                a natureza e a idealização do amor.
+            </p>
+        </article>
+
+        <article>
+            <h3>🔎 Realismo</h3>
+            <p>
+                O Realismo buscou representar a sociedade de forma mais
+                objetiva, crítica e próxima da realidade.
+            </p>
+        </article>
+
+        <article>
+            <h3>📖 Interpretação de Texto</h3>
+            <p>
+                Interpretar um texto significa compreender suas ideias,
+                informações, argumentos e intenções.
+            </p>
+        </article>
+
+        <article>
+            <h3>📰 Gêneros Textuais</h3>
+            <p>
+                Gêneros textuais são formas de comunicação utilizadas
+                em diferentes situações, como notícias, cartas,
+                entrevistas e artigos.
+            </p>
+        </article>
+
+        <article>
+            <h3>📢 Funções da Linguagem</h3>
+            <p>
+                As funções da linguagem indicam diferentes objetivos
+                presentes na comunicação, como informar, emocionar,
+                convencer ou estabelecer contato.
+            </p>
+        </article>
+
+        <article>
+            <h3>✍️ Linguagem Formal e Informal</h3>
+            <p>
+                A linguagem formal segue normas da língua e é utilizada
+                em situações mais formais. A linguagem informal é mais
+                espontânea e comum em situações do cotidiano.
+            </p>
+        </article>
+
+    </section>
+
+    <section id="quiz" class="painel">
+
+        <h2>📝 Quiz</h2>
+
+        <div class="questao">
+            <h3>1. Qual movimento valorizou os sentimentos e a idealização do amor?</h3>
+
+            <label>
+                <input type="radio" name="q1" value="0">
+                Realismo
+            </label>
+
+            <label>
+                <input type="radio" name="q1" value="1">
+                Romantismo
+            </label>
+
+            <label>
+                <input type="radio" name="q1" value="0">
+                Modernismo
+            </label>
+        </div>
+
+        <div class="questao">
+            <h3>2. O Realismo buscava:</h3>
+
+            <label>
+                <input type="radio" name="q2" value="1">
+                Representar a realidade de forma crítica e objetiva.
+            </label>
+
+            <label>
+                <input type="radio" name="q2" value="0">
+                Idealizar completamente a sociedade.
+            </label>
+
+            <label>
+                <input type="radio" name="q2" value="0">
+                Valorizar apenas os sentimentos.
+            </label>
+        </div>
+
+        <div class="questao">
+            <h3>3. Interpretar um texto significa:</h3>
+
+            <label>
+                <input type="radio" name="q3" value="0">
+                Apenas copiar suas informações.
+            </label>
+
+            <label>
+                <input type="radio" name="q3" value="1">
+                Compreender suas ideias e informações.
+            </label>
+
+            <label>
+                <input type="radio" name="q3" value="0">
+                Ignorar o contexto.
+            </label>
+        </div>
+
+        <div class="questao">
+            <h3>4. Notícias, entrevistas e cartas são exemplos de:</h3>
+
+            <label>
+                <input type="radio" name="q4" value="1">
+                Gêneros textuais.
+            </label>
+
+            <label>
+                <input type="radio" name="q4" value="0">
+                Figuras de linguagem.
+            </label>
+
+            <label>
+                <input type="radio" name="q4" value="0">
+                Movimentos literários.
+            </label>
+        </div>
+
+        <div class="questao">
+            <h3>5. As funções da linguagem representam:</h3>
+
+            <label>
+                <input type="radio" name="q5" value="0">
+                Apenas regras gramaticais.
+            </label>
+
+            <label>
+                <input type="radio" name="q5" value="1">
+                Diferentes objetivos da comunicação.
+            </label>
+
+            <label>
+                <input type="radio" name="q5" value="0">
+                Apenas textos literários.
+            </label>
+        </div>
+
+        <div class="questao">
+            <h3>6. A linguagem formal é mais adequada:</h3>
+
+            <label>
+                <input type="radio" name="q6" value="1">
+                A situações que exigem maior formalidade.
+            </label>
+
+            <label>
+                <input type="radio" name="q6" value="0">
+                Apenas a conversas entre amigos.
+            </label>
+
+            <label>
+                <input type="radio" name="q6" value="0">
+                Apenas às redes sociais.
+            </label>
+        </div>
+
+        <div class="questao">
+            <h3>7. A linguagem informal é caracterizada por:</h3>
+
+            <label>
+                <input type="radio" name="q7" value="0">
+                Uso obrigatório da norma-padrão.
+            </label>
+
+            <label>
+                <input type="radio" name="q7" value="1">
+                Maior espontaneidade e proximidade.
+            </label>
+
+            <label>
+                <input type="radio" name="q7" value="0">
+                Uso exclusivo em documentos oficiais.
+            </label>
+        </div>
+
+        <button onclick="exibirResultado()">Ver resultado</button>
+
+        <div id="resultado-final-quiz"></div>
+
+    </section>
+
+    <section id="checklist" class="painel">
+
+        <h2>✅ Checklist</h2>
+
+        <label>
+            <input type="checkbox" onchange="atualizarProgresso()">
+            Revisei Literatura
+        </label>
+
+        <label>
+            <input type="checkbox" onchange="atualizarProgresso()">
+            Revisei Romantismo
+        </label>
+
+        <label>
+            <input type="checkbox" onchange="atualizarProgresso()">
+            Revisei Realismo
+        </label>
+
+        <label>
+            <input type="checkbox" onchange="atualizarProgresso()">
+            Revisei Interpretação de Texto
+        </label>
+
+        <label>
+            <input type="checkbox" onchange="atualizarProgresso()">
+            Revisei Gêneros Textuais
+        </label>
+
+        <label>
+            <input type="checkbox" onchange="atualizarProgresso()">
+            Revisei Funções da Linguagem
+        </label>
+
+        <label>
+            <input type="checkbox" onchange="atualizarProgresso()">
+            Revisei Linguagem Formal e Informal
+        </label>
+
+    </section>
+
+    <a class="voltar" href="../../2ano.html">
+        ← Voltar para 2º Ano
+    </a>
+
+</main>
+
+<footer>
+    <p>© 2026 Revisão de Estudos SESI</p>
+</footer>
+
+<script src="../../../assets/js/script.js"></script>
+
+</body>
+</html>

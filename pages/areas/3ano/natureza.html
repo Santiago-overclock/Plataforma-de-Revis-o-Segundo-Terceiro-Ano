@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3º Ano - Ciências da Natureza</title>
+<link rel="stylesheet" href="../../../assets/css/style.css">
+</head>
+
+<body>
+
+<header>
+<h1>🔬 Ciências da Natureza</h1>
+<p>Revisão do 3º Ano</p>
+</header>
+
+<main>
+
+<nav class="navegacao">
+<a href="../../../index.html">🏠 Início</a>
+<a href="../../3ano.html">📕 3º Ano</a>
+<button class="botao-tema" onclick="alternarModoEscuro()">🌙 Modo escuro</button>
+</nav>
+
+<div class="abas">
+<button class="aba ativo" onclick="mostrarAba('conteudo', this)">📚 Conteúdo</button>
+<button class="aba" onclick="mostrarAba('quiz', this)">🧠 Quiz</button>
+<button class="aba" onclick="mostrarAba('checklist', this)">✅ Checklist</button>
+</div>
+
+<section id="conteudo" class="painel ativo">
+
+<div class="topico">
+<h3>⚡ Física — Circuitos Elétricos</h3>
+<p>Um circuito elétrico é formado por elementos que permitem a passagem de corrente elétrica.</p>
+<p><strong>U = R · i</strong></p>
+</div>
+
+<div class="topico">
+<h3>🔌 Resistência Equivalente</h3>
+<p>Em uma associação em série, as resistências são somadas.</p>
+<p><strong>Rₑq = R₁ + R₂ + R₃</strong></p>
+</div>
+
+<div class="topico">
+<h3>🧪 Química — Oxidação e Redução</h3>
+<p>Oxidação é a perda de elétrons, enquanto redução é o ganho de elétrons.</p>
+<p><strong>Oxidação → perde elétrons</strong></p>
+<p><strong>Redução → ganha elétrons</strong></p>
+</div>
+
+<div class="topico">
+<h3>🔢 NOX</h3>
+<p>O número de oxidação indica a carga real ou hipotética de um elemento em uma substância.</p>
+<p><strong>Substância simples → NOX = 0</strong></p>
+</div>
+
+<div class="topico">
+<h3>🔋 Eletroquímica</h3>
+<p>A eletroquímica estuda as reações de oxidação e redução relacionadas à produção ou utilização de energia elétrica.</p>
+<p><strong>Energia química → Energia elétrica</strong></p>
+</div>
+
+<div class="topico">
+<h3>🧬 Biologia — Evolução</h3>
+<p>A evolução ocorre ao longo das gerações por meio da alteração das características das populações.</p>
+</div>
+
+<div class="topico">
+<h3>🌱 Seleção Natural</h3>
+<p>Características favoráveis podem se tornar mais frequentes em uma população ao longo das gerações.</p>
+</div>
+
+</section>
+
+<section id="quiz" class="painel">
+
+<div class="questao">
+<h3>1. Qual fórmula relaciona tensão, resistência e corrente?</h3>
+<label><input type="radio" name="q1" value="1"> U = R · i</label>
+<label><input type="radio" name="q1" value="0"> U = R + i</label>
+<label><input type="radio" name="q1" value="0"> U = R ÷ i</label>
+</div>
+
+<div class="questao">
+<h3>2. Em série, a resistência equivalente é:</h3>
+<label><input type="radio" name="q2" value="1"> A soma das resistências.</label>
+<label><input type="radio" name="q2" value="0"> A multiplicação das resistências.</label>
+<label><input type="radio" name="q2" value="0"> Sempre igual a zero.</label>
+</div>
+
+<div class="questao">
+<h3>3. Oxidação significa:</h3>
+<label><input type="radio" name="q3" value="1"> Perda de elétrons.</label>
+<label><input type="radio" name="q3" value="0"> Ganho de elétrons.</label>
+<label><input type="radio" name="q3" value="0"> Ganho de prótons.</label>
+</div>
+
+<div class="questao">
+<h3>4. Em uma substância simples, o NOX é:</h3>
+<label><input type="radio" name="q4" value="1"> 0</label>
+<label><input type="radio" name="q4" value="0"> +1</label>
+<label><input type="radio" name="q4" value="0"> -1</label>
+</div>
+
+<div class="questao">
+<h3>5. A eletroquímica estuda:</h3>
+<label><input type="radio" name="q5" value="1"> Reações de oxidação e redução relacionadas à energia elétrica.</label>
+<label><input type="radio" name="q5" value="0"> Apenas células biológicas.</label>
+<label><input type="radio" name="q5" value="0"> Apenas ondas.</label>
+</div>
+
+<div class="questao">
+<h3>6. A evolução ocorre:</h3>
+<label><input type="radio" name="q6" value="1"> Ao longo das gerações.</label>
+<label><input type="radio" name="q6" value="0"> Apenas durante um dia.</label>
+<label><input type="radio" name="q6" value="0"> Sem alteração nas populações.</label>
+</div>
+
+<div class="questao">
+<h3>7. Na seleção natural:</h3>
+<label><input type="radio" name="q7" value="1"> Características favoráveis podem se tornar mais frequentes.</label>
+<label><input type="radio" name="q7" value="0"> Todas as características desaparecem.</label>
+<label><input type="radio" name="q7" value="0"> Nenhuma característica muda de frequência.</label>
+</div>
+
+<button class="botao" onclick="exibirResultado()">Conferir resultado</button>
+
+<div id="resultado-final-quiz"></div>
+
+</section>
+
+<section id="checklist" class="painel">
+
+<label><input type="checkbox" onchange="atualizarProgresso()"> Circuitos Elétricos</label>
+<label><input type="checkbox" onchange="atualizarProgresso()"> Resistência Equivalente</label>
+<label><input type="checkbox" onchange="atualizarProgresso()"> Oxidação e Redução</label>
+<label><input type="checkbox" onchange="atualizarProgresso()"> NOX</label>
+<label><input type="checkbox" onchange="atualizarProgresso()"> Eletroquímica</label>
+<label><input type="checkbox" onchange="atualizarProgresso()"> Evolução</label>
+<label><input type="checkbox" onchange="atualizarProgresso()"> Seleção Natural</label>
+
+<div class="progresso-materia">
+<div class="progresso-titulo">
+<strong>Progresso</strong>
+<span id="porcentagem">0%</span>
+</div>
+
+<div class="barra">
+<div id="barra-progresso"></div>
+</div>
+
+<div id="aviso-conclusao"></div>
+</div>
+
+</section>
+
+<a href="../../3ano.html" class="voltar">← Voltar para o 3º Ano</a>
+
+</main>
+
+<footer>
+<p>📚 Revisão de Estudos SESI</p>
+</footer>
+
+<script src="../../../assets/js/script.js"></script>
+
+</body>
+</html>

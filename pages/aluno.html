@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Área do Aluno - Revisão SESI</title>
+
+    <link
+        rel="stylesheet"
+        href="../assets/css/style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <h1>👤 Área do Aluno</h1>
+
+    <nav>
+
+        <a href="../index.html">
+            🏠 Início
+        </a>
+
+        <a href="2ano.html">
+            📘 2º Ano
+        </a>
+
+        <a href="3ano.html">
+            📕 3º Ano
+        </a>
+
+        <button
+            class="botao-modo"
+            onclick="alternarModoEscuro()">
+            🌙 Modo escuro
+        </button>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+
+    <!-- PERFIL -->
+
+    <section class="perfil-aluno animar">
+
+        <div class="avatar">
+            👨‍🎓
+        </div>
+
+        <div>
+
+            <h2>
+                Olá, <span class="nome-aluno">Aluno</span>!
+            </h2>
+
+            <p>
+                Acompanhe sua evolução nos estudos.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- NOME -->
+
+    <section class="card">
+
+        <h2>✏️ Identificação</h2>
+
+        <p>
+            Digite seu nome para personalizar sua área.
+        </p>
+
+        <br>
+
+        <div class="form-aluno">
+
+            <input
+                type="text"
+                id="nome-aluno"
+                placeholder="Digite seu nome">
+
+            <button
+                class="botao"
+                onclick="salvarNomeAluno()">
+                Salvar nome
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ESTATÍSTICAS -->
+
+    <section>
+
+        <div class="cabecalho-pagina">
+
+            <h2>📊 Seu desempenho</h2>
+
+            <p>
+                Estatísticas baseadas nos quizzes realizados.
+            </p>
+
+        </div>
+
+
+        <div class="estatisticas">
+
+
+            <div class="estatistica animar">
+
+                <div class="estatistica-icone">
+                    📝
+                </div>
+
+                <strong id="total-quizzes">
+                    0
+                </strong>
+
+                <span>
+                    Quizzes realizados
+                </span>
+
+            </div>
+
+
+            <div class="estatistica animar">
+
+                <div class="estatistica-icone">
+                    ❓
+                </div>
+
+                <strong id="total-questoes">
+                    0
+                </strong>
+
+                <span>
+                    Questões respondidas
+                </span>
+
+            </div>
+
+
+            <div class="estatistica animar">
+
+                <div class="estatistica-icone">
+                    🏆
+                </div>
+
+                <strong id="melhor-resultado">
+                    0%
+                </strong>
+
+                <span>
+                    Melhor resultado
+                </span>
+
+            </div>
+
+
+            <div class="estatistica animar">
+
+                <div class="estatistica-icone">
+                    📈
+                </div>
+
+                <strong id="media-resultados">
+                    0%
+                </strong>
+
+                <span>
+                    Média dos quizzes
+                </span>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- MATÉRIA COM MAIOR PROGRESSO -->
+
+    <section class="card">
+
+        <h2>
+            ⭐ Seu destaque
+        </h2>
+
+        <p>
+            Matéria com maior progresso:
+        </p>
+
+        <br>
+
+        <h3
+            id="melhor-materia"
+            style="color: #0759c7;">
+            Nenhuma ainda
+        </h3>
+
+    </section>
+
+
+    <!-- CONQUISTAS -->
+
+    <section>
+
+        <div class="cabecalho-pagina">
+
+            <h2>🏆 Conquistas</h2>
+
+            <p>
+                Continue estudando para desbloquear novas conquistas.
+            </p>
+
+        </div>
+
+
+        <div
+            id="lista-conquistas"
+            class="lista-conquistas">
+
+        </div>
+
+    </section>
+
+
+    <!-- HISTÓRICO -->
+
+    <section>
+
+        <div class="cabecalho-pagina">
+
+            <h2>📈 Histórico de quizzes</h2>
+
+            <p>
+                Confira seus resultados mais recentes.
+            </p>
+
+        </div>
+
+
+        <div
+            id="historico-quizzes"
+            class="historico">
+
+        </div>
+
+    </section>
+
+
+    <!-- INFORMAÇÕES -->
+
+    <section class="card">
+
+        <h2>
+            📚 Como melhorar?
+        </h2>
+
+        <p>
+            Revise os conteúdos em que teve dificuldade,
+            marque os tópicos estudados no checklist e tente
+            novamente os quizzes.
+        </p>
+
+    </section>
+
+
+    <!-- APAGAR DADOS -->
+
+    <section class="area-perigo">
+
+        <h3>
+            ⚠️ Gerenciamento de dados
+        </h3>
+
+        <p>
+            Esta opção apaga o nome, progresso, histórico,
+            quizzes e conquistas salvos neste navegador.
+        </p>
+
+        <button
+            class="botao-perigo"
+            onclick="limparDadosEstudo()">
+            Apagar meu progresso
+        </button>
+
+    </section>
+
+
+    <a
+        href="../index.html"
+        class="voltar">
+        ← Voltar para o início
+    </a>
+
+
+</main>
+
+
+<footer>
+
+    <p>
+        📚 Revisão de Estudos SESI
+    </p>
+
+</footer>
+
+
+<script src="../assets/js/script.js"></script>
+
+</body>
+
+</html>

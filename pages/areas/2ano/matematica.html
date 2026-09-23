@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>2º Ano - Matemática</title>
+
+    <link rel="stylesheet" href="../../../assets/css/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>📚 2º Ano — Matemática</h1>
+    <p>Revisão de Estudos SESI</p>
+</header>
+
+<main>
+
+    <div class="cabecalho-pagina">
+        <h2>Matemática</h2>
+        <p>Revise os principais conteúdos de Matemática do 2º ano.</p>
+    </div>
+
+    <section class="progresso">
+        <span id="porcentagem-progresso">0%</span>
+
+        <div class="barra">
+            <div id="barra-progresso"></div>
+        </div>
+    </section>
+
+    <div class="abas">
+
+        <button class="aba ativo" onclick="mostrarAba('conteudo', this)">
+            📖 Conteúdo
+        </button>
+
+        <button class="aba" onclick="mostrarAba('quiz', this)">
+            📝 Quiz
+        </button>
+
+        <button class="aba" onclick="mostrarAba('checklist', this)">
+            ✅ Checklist
+        </button>
+
+    </div>
+
+
+    <!-- =====================================================
+         CONTEÚDO
+    ====================================================== -->
+
+    <section id="conteudo" class="painel ativo">
+
+        <h2>📖 Conteúdos</h2>
+
+        <article>
+            <h3>📈 Função Afim</h3>
+
+            <p>
+                A função afim é representada por uma expressão do tipo
+                <strong>f(x) = ax + b</strong>, em que a e b são números reais.
+            </p>
+
+            <p>
+                O gráfico de uma função afim é uma reta.
+            </p>
+        </article>
+
+
+        <article>
+            <h3>📊 Função Quadrática</h3>
+
+            <p>
+                A função quadrática é representada por
+                <strong>f(x) = ax² + bx + c</strong>,
+                com a diferente de zero.
+            </p>
+
+            <p>
+                Seu gráfico é uma parábola.
+            </p>
+        </article>
+
+
+        <article>
+            <h3>🔢 Equação do 2º Grau</h3>
+
+            <p>
+                Uma equação do segundo grau possui a forma
+                <strong>ax² + bx + c = 0</strong>.
+            </p>
+
+            <p>
+                Para encontrar suas raízes podemos utilizar a fórmula de Bhaskara:
+            </p>
+
+            <p>
+                <strong>Δ = b² - 4ac</strong>
+            </p>
+
+            <p>
+                <strong>x = (-b ± √Δ) / 2a</strong>
+            </p>
+        </article>
+
+
+        <article>
+            <h3>📐 Teorema de Pitágoras</h3>
+
+            <p>
+                O Teorema de Pitágoras é utilizado em triângulos retângulos.
+            </p>
+
+            <p>
+                <strong>a² = b² + c²</strong>
+            </p>
+
+            <p>
+                A hipotenusa é o maior lado e fica oposta ao ângulo de 90°.
+            </p>
+        </article>
+
+
+        <article>
+            <h3>📊 Estatística</h3>
+
+            <p>
+                A estatística permite organizar, analisar e interpretar dados.
+            </p>
+
+            <p>
+                A média aritmética é calculada somando os valores e dividindo
+                pela quantidade de valores.
+            </p>
+
+            <p>
+                <strong>Média = soma dos valores ÷ quantidade de valores</strong>
+            </p>
+        </article>
+
+
+        <article>
+            <h3>🎲 Probabilidade</h3>
+
+            <p>
+                A probabilidade representa a chance de um determinado evento
+                acontecer.
+            </p>
+
+            <p>
+                <strong>
+                    P(A) = casos favoráveis ÷ casos possíveis
+                </strong>
+            </p>
+        </article>
+
+
+        <article>
+            <h3>🔢 Análise Combinatória</h3>
+
+            <p>
+                A análise combinatória estuda maneiras de contar possibilidades
+                sem precisar listar todas elas.
+            </p>
+
+            <p>
+                Alguns dos principais conceitos são princípio aditivo,
+                princípio multiplicativo e permutação.
+            </p>
+        </article>
+
+    </section>
+
+
+    <!-- =====================================================
+         QUIZ
+    ====================================================== -->
+
+    <section id="quiz" class="painel">
+
+        <h2>📝 Quiz de Matemática</h2>
+
+
+        <div class="questao">
+
+            <h3>
+                1. Qual é a forma geral de uma função afim?
+            </h3>
+
+            <label>
+                <input type="radio" name="q1" value="0">
+                f(x) = ax² + bx + c
+            </label>
+
+            <label>
+                <input type="radio" name="q1" value="1">
+                f(x) = ax + b
+            </label>
+
+            <label>
+                <input type="radio" name="q1" value="0">
+                f(x) = a/x
+            </label>
+
+        </div>
+
+
+        <div class="questao">
+
+            <h3>
+                2. Qual é a fórmula do discriminante (Δ)?
+            </h3>
+
+            <label>
+                <input type="radio" name="q2" value="0">
+                Δ = b² + 4ac
+            </label>
+
+            <label>
+                <input type="radio" name="q2" value="1">
+                Δ = b² - 4ac
+            </label>
+
+            <label>
+                <input type="radio" name="q2" value="0">
+                Δ = 2b - ac
+            </label>
+
+        </div>
+
+
+        <div class="questao">
+
+            <h3>
+                3. O gráfico de uma função quadrática é:
+            </h3>
+
+            <label>
+                <input type="radio" name="q3" value="0">
+                Uma reta
+            </label>
+
+            <label>
+                <input type="radio" name="q3" value="1">
+                Uma parábola
+            </label>
+
+            <label>
+                <input type="radio" name="q3" value="0">
+                Uma circunferência
+            </label>
+
+        </div>
+
+
+        <div class="questao">
+
+            <h3>
+                4. O Teorema de Pitágoras é aplicado principalmente em:
+            </h3>
+
+            <label>
+                <input type="radio" name="q4" value="1">
+                Triângulos retângulos
+            </label>
+
+            <label>
+                <input type="radio" name="q4" value="0">
+                Círculos
+            </label>
+
+            <label>
+                <input type="radio" name="q4" value="0">
+                Quadrados
+            </label>
+
+        </div>
+
+
+        <div class="questao">
+
+            <h3>
+                5. Como calculamos a média aritmética?
+            </h3>
+
+            <label>
+                <input type="radio" name="q5" value="0">
+                Multiplicando todos os valores
+            </label>
+
+            <label>
+                <input type="radio" name="q5" value="1">
+                Somando os valores e dividindo pela quantidade
+            </label>
+
+            <label>
+                <input type="radio" name="q5" value="0">
+                Subtraindo todos os valores
+            </label>
+
+        </div>
+
+
+        <div class="questao">
+
+            <h3>
+                6. Qual fórmula representa a probabilidade de um evento?
+            </h3>
+
+            <label>
+                <input type="radio" name="q6" value="1">
+                Casos favoráveis ÷ casos possíveis
+            </label>
+
+            <label>
+                <input type="radio" name="q6" value="0">
+                Casos possíveis ÷ casos favoráveis
+            </label>
+
+            <label>
+                <input type="radio" name="q6" value="0">
+                Casos favoráveis + casos possíveis
+            </label>
+
+        </div>
+
+
+        <div class="questao">
+
+            <h3>
+                7. A análise combinatória é utilizada para:
+            </h3>
+
+            <label>
+                <input type="radio" name="q7" value="0">
+                Resolver somente equações
+            </label>
+
+            <label>
+                <input type="radio" name="q7" value="1">
+                Contar possibilidades e formas de organização
+            </label>
+
+            <label>
+                <input type="radio" name="q7" value="0">
+                Calcular somente áreas
+            </label>
+
+        </div>
+
+
+        <button onclick="exibirResultado()">
+            Ver resultado
+        </button>
+
+        <div id="resultado-final-quiz"></div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CHECKLIST
+    ====================================================== -->
+
+    <section id="checklist" class="painel">
+
+        <h2>✅ Checklist</h2>
+
+        <label>
+            <input type="checkbox" onchange="atualizarProgresso()">
+            Revisei Função Afim
+        </label>
+
+        <label>
+            <input type="checkbox" onchange="atualizarProgresso()">
+            Revisei Função Quadrática
+        </label>
+
+        <label>
+            <input type="checkbox" onchange="atualizarProgresso()">
+            Revisei Equação do 2º Grau
+        </label>
+
+        <label>
+            <input type="checkbox" onchange="atualizarProgresso()">
+            Revisei Teorema de Pitágoras
+        </label>
+
+        <label>
+            <input type="checkbox" onchange="atualizarProgresso()">
+            Revisei Estatística
+        </label>
+
+        <label>
+            <input type="checkbox" onchange="atualizarProgresso()">
+            Revisei Probabilidade
+        </label>
+
+        <label>
+            <input type="checkbox" onchange="atualizarProgresso()">
+            Revisei Análise Combinatória
+        </label>
+
+    </section>
+
+
+    <a class="voltar" href="../../2ano.html">
+        ← Voltar para 2º Ano
+    </a>
+
+</main>
+
+
+<footer>
+    <p>© 2026 Revisão de Estudos SESI</p>
+</footer>
+
+
+<script src="../../../assets/js/script.js"></script>
+
+</body>
+</html>

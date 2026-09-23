@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Revisão do 2º Ano</title>
+
+    <link
+        rel="stylesheet"
+        href="../assets/css/style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <h1>📘 Revisão do 2º Ano</h1>
+
+    <nav>
+
+        <a href="../index.html">
+            🏠 Início
+        </a>
+
+        <a href="2ano.html">
+            📘 2º Ano
+        </a>
+
+        <a href="3ano.html">
+            📕 3º Ano
+        </a>
+
+        <a href="aluno.html">
+            👤 Área do Aluno
+        </a>
+
+        <button
+            class="botao-modo"
+            onclick="alternarModoEscuro()">
+            🌙 Modo escuro
+        </button>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+
+    <section class="cabecalho-pagina">
+
+        <h2>
+            📚 Conteúdos do 2º Ano
+        </h2>
+
+        <p>
+            Escolha uma área do conhecimento para começar sua revisão.
+        </p>
+
+    </section>
+
+
+    <!-- PROGRESSO -->
+
+    <section class="dashboard">
+
+        <h2>
+            📊 Seu progresso
+        </h2>
+
+        <div class="progresso-geral-box">
+
+            <div
+                class="numero-grande"
+                id="numero-progresso-geral">
+                0%
+            </div>
+
+            <p>
+                Progresso geral do 2º ano
+            </p>
+
+            <div class="barra-dashboard-container">
+
+                <div
+                    id="barra-progresso-geral"
+                    class="barra-dashboard">
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="materias-dashboard">
+
+
+            <div
+                class="dashboard-materia animar"
+                data-materia="Linguagens"
+                data-caminho="/pages/areas/2ano/linguagens.html">
+
+                <h3>📚 Linguagens</h3>
+
+                <div class="progresso-titulo">
+
+                    <span>
+                        Progresso
+                    </span>
+
+                    <span class="numero-progresso">
+                        0%
+                    </span>
+
+                </div>
+
+                <div class="barra-dashboard-container">
+
+                    <div class="barra-materia"></div>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="dashboard-materia animar"
+                data-materia="Matemática"
+                data-caminho="/pages/areas/2ano/matematica.html">
+
+                <h3>🔢 Matemática</h3>
+
+                <div class="progresso-titulo">
+
+                    <span>
+                        Progresso
+                    </span>
+
+                    <span class="numero-progresso">
+                        0%
+                    </span>
+
+                </div>
+
+                <div class="barra-dashboard-container">
+
+                    <div class="barra-materia"></div>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="dashboard-materia animar"
+                data-materia="Ciências da Natureza"
+                data-caminho="/pages/areas/2ano/natureza.html">
+
+                <h3>🧪 Ciências da Natureza</h3>
+
+                <div class="progresso-titulo">
+
+                    <span>
+                        Progresso
+                    </span>
+
+                    <span class="numero-progresso">
+                        0%
+                    </span>
+
+                </div>
+
+                <div class="barra-dashboard-container">
+
+                    <div class="barra-materia"></div>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="dashboard-materia animar"
+                data-materia="Ciências Humanas"
+                data-caminho="/pages/areas/2ano/humanas.html">
+
+                <h3>🌎 Ciências Humanas</h3>
+
+                <div class="progresso-titulo">
+
+                    <span>
+                        Progresso
+                    </span>
+
+                    <span class="numero-progresso">
+                        0%
+                    </span>
+
+                </div>
+
+                <div class="barra-dashboard-container">
+
+                    <div class="barra-materia"></div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- PESQUISA -->
+
+    <section class="pesquisa">
+
+        <input
+            type="text"
+            id="campo-pesquisa"
+            placeholder="🔎 Pesquisar matéria...">
+
+    </section>
+
+
+    <!-- MATÉRIAS -->
+
+    <section>
+
+        <div class="cards">
+
+
+            <div class="card card-materia animar dashboard-materia">
+
+                <h3>📚 Linguagens</h3>
+
+                <p>
+                    Literatura, interpretação de texto,
+                    gêneros textuais e funções da linguagem.
+                </p>
+
+                <br>
+
+                <a
+                    href="areas/2ano/linguagens.html"
+                    class="botao-principal">
+                    Estudar
+                </a>
+
+            </div>
+
+
+            <div class="card card-materia animar dashboard-materia">
+
+                <h3>🔢 Matemática</h3>
+
+                <p>
+                    Funções, equações, estatística,
+                    probabilidade e análise combinatória.
+                </p>
+
+                <br>
+
+                <a
+                    href="areas/2ano/matematica.html"
+                    class="botao-principal">
+                    Estudar
+                </a>
+
+            </div>
+
+
+            <div class="card card-materia animar dashboard-materia">
+
+                <h3>🧪 Ciências da Natureza</h3>
+
+                <p>
+                    Física, Química e Biologia.
+                </p>
+
+                <br>
+
+                <a
+                    href="areas/2ano/natureza.html"
+                    class="botao-principal">
+                    Estudar
+                </a>
+
+            </div>
+
+
+            <div class="card card-materia animar dashboard-materia">
+
+                <h3>🌎 Ciências Humanas</h3>
+
+                <p>
+                    História, Geografia e Sociologia.
+                </p>
+
+                <br>
+
+                <a
+                    href="areas/2ano/humanas.html"
+                    class="botao-principal">
+                    Estudar
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <a
+        href="../index.html"
+        class="voltar">
+        ← Voltar para o início
+    </a>
+
+
+</main>
+
+
+<footer>
+
+    <p>
+        📚 Revisão de Estudos SESI
+    </p>
+
+</footer>
+
+
+<script src="../assets/js/script.js"></script>
+
+</body>
+
+</html>

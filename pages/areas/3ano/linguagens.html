@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3º Ano - Linguagens</title>
+    <link rel="stylesheet" href="../../../assets/css/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>📝 Linguagens</h1>
+    <p>Revisão do 3º Ano</p>
+</header>
+
+<main>
+
+<nav class="navegacao">
+    <a href="../../../index.html">🏠 Início</a>
+    <a href="../../3ano.html">📕 3º Ano</a>
+    <button class="botao-tema" onclick="alternarModoEscuro()">🌙 Modo escuro</button>
+</nav>
+
+<div class="abas">
+    <button class="aba ativo" onclick="mostrarAba('conteudo', this)">📚 Conteúdo</button>
+    <button class="aba" onclick="mostrarAba('quiz', this)">🧠 Quiz</button>
+    <button class="aba" onclick="mostrarAba('checklist', this)">✅ Checklist</button>
+</div>
+
+<section id="conteudo" class="painel ativo">
+
+<div class="topico">
+<h3>🎨 Modernismo</h3>
+<p>O Modernismo brasileiro buscou maior liberdade artística, rompendo com padrões tradicionais e valorizando elementos da cultura brasileira.</p>
+<p><strong>Semana de Arte Moderna → 1922</strong></p>
+</div>
+
+<div class="topico">
+<h3>🔎 Interpretação de Texto</h3>
+<p>Interpretar um texto significa compreender suas ideias, informações, argumentos e o contexto em que foi produzido.</p>
+</div>
+
+<div class="topico">
+<h3>💡 Informação Explícita e Implícita</h3>
+<p>A informação explícita aparece diretamente no texto. A informação implícita precisa ser compreendida ou inferida a partir das informações apresentadas.</p>
+<p><strong>Explícita = está diretamente apresentada.</strong></p>
+</div>
+
+<div class="topico">
+<h3>📰 Gêneros Textuais</h3>
+<p>Os gêneros textuais são formas de comunicação utilizadas em diferentes situações, como notícias, entrevistas, artigos, anúncios e cartas.</p>
+</div>
+
+<div class="topico">
+<h3>📢 Funções da Linguagem</h3>
+<p>As funções da linguagem representam diferentes objetivos presentes na comunicação, como informar, expressar emoções, convencer ou estabelecer contato.</p>
+</div>
+
+<div class="topico">
+<h3>📣 Função Apelativa</h3>
+<p>A função apelativa, também chamada de conativa, tem como foco influenciar ou convencer o receptor da mensagem.</p>
+</div>
+
+</section>
+
+
+<section id="quiz" class="painel">
+
+<div class="questao">
+<h3>1. Quando ocorreu a Semana de Arte Moderna?</h3>
+<label><input type="radio" name="q1" value="1"> 1922</label>
+<label><input type="radio" name="q1" value="0"> 1930</label>
+<label><input type="radio" name="q1" value="0"> 1945</label>
+</div>
+
+<div class="questao">
+<h3>2. O que significa interpretar um texto?</h3>
+<label><input type="radio" name="q2" value="1"> Compreender suas ideias e informações.</label>
+<label><input type="radio" name="q2" value="0"> Apenas copiar suas palavras.</label>
+<label><input type="radio" name="q2" value="0"> Ignorar o contexto.</label>
+</div>
+
+<div class="questao">
+<h3>3. A informação explícita:</h3>
+<label><input type="radio" name="q3" value="1"> Está diretamente apresentada.</label>
+<label><input type="radio" name="q3" value="0"> Precisa sempre ser inferida.</label>
+<label><input type="radio" name="q3" value="0"> Não aparece no texto.</label>
+</div>
+
+<div class="questao">
+<h3>4. O que são gêneros textuais?</h3>
+<label><input type="radio" name="q4" value="1"> Formas de comunicação usadas em diferentes situações.</label>
+<label><input type="radio" name="q4" value="0"> Apenas textos literários.</label>
+<label><input type="radio" name="q4" value="0"> Apenas textos científicos.</label>
+</div>
+
+<div class="questao">
+<h3>5. As funções da linguagem representam:</h3>
+<label><input type="radio" name="q5" value="1"> Diferentes objetivos da comunicação.</label>
+<label><input type="radio" name="q5" value="0"> Apenas regras gramaticais.</label>
+<label><input type="radio" name="q5" value="0"> Apenas textos narrativos.</label>
+</div>
+
+<div class="questao">
+<h3>6. A função apelativa busca:</h3>
+<label><input type="radio" name="q6" value="1"> Influenciar ou convencer o receptor.</label>
+<label><input type="radio" name="q6" value="0"> Apenas descrever um objeto.</label>
+<label><input type="radio" name="q6" value="0"> Apenas expressar sentimentos.</label>
+</div>
+
+<button class="botao" onclick="exibirResultado()">Conferir resultado</button>
+
+<div id="resultado-final-quiz"></div>
+
+</section>
+
+
+<section id="checklist" class="painel">
+
+<label><input type="checkbox" onchange="atualizarProgresso()"> Modernismo</label>
+<label><input type="checkbox" onchange="atualizarProgresso()"> Interpretação de Texto</label>
+<label><input type="checkbox" onchange="atualizarProgresso()"> Informação Explícita e Implícita</label>
+<label><input type="checkbox" onchange="atualizarProgresso()"> Gêneros Textuais</label>
+<label><input type="checkbox" onchange="atualizarProgresso()"> Funções da Linguagem</label>
+<label><input type="checkbox" onchange="atualizarProgresso()"> Função Apelativa</label>
+
+<br>
+
+<div class="progresso-materia">
+    <div class="progresso-titulo">
+        <strong>Progresso</strong>
+        <span id="porcentagem">0%</span>
+    </div>
+
+    <div class="barra">
+        <div id="barra-progresso"></div>
+    </div>
+
+    <div id="aviso-conclusao"></div>
+</div>
+
+</section>
+
+<a href="../../3ano.html" class="voltar">← Voltar para o 3º Ano</a>
+
+</main>
+
+<footer>
+<p>📚 Revisão de Estudos SESI</p>
+</footer>
+
+<script src="../../../assets/js/script.js"></script>
+
+</body>
+</html>

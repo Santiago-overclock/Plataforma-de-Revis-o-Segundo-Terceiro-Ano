@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>3º Ano - Revisão SESI</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>📕 Revisão do 3º Ano</h1>
+    <p>Prepare-se para provas, vestibulares e ENEM.</p>
+</header>
+
+<main>
+
+    <nav class="navegacao">
+        <a href="../index.html">🏠 Início</a>
+        <a href="2ano.html">📘 2º Ano</a>
+        <a href="3ano.html" class="selecionado">📕 3º Ano</a>
+
+        <button class="botao-tema" onclick="alternarModoEscuro()">
+            🌙 Modo escuro
+        </button>
+    </nav>
+
+    <section class="dashboard">
+
+        <h2>📊 Progresso geral</h2>
+
+        <div class="progresso-geral-box">
+
+            <div
+                class="numero-grande"
+                id="progresso-geral-numero">
+                0%
+            </div>
+
+            <div class="barra-dashboard-container">
+                <div
+                    class="barra-dashboard"
+                    id="progresso-geral-barra">
+                </div>
+            </div>
+
+        </div>
+
+        <p id="mensagem-progresso">
+            🚀 Comece uma matéria e acompanhe seu progresso aqui.
+        </p>
+
+    </section>
+
+
+    <section class="pesquisa">
+
+        <label for="campo-pesquisa">
+            🔎 Pesquisar matéria
+        </label>
+
+        <input
+            type="text"
+            id="campo-pesquisa"
+            placeholder="Digite o nome de uma matéria..."
+        >
+
+    </section>
+
+
+    <section class="materias-dashboard">
+
+        <div
+            class="dashboard-materia"
+            data-materia
+            data-caminho="/pages/areas/3ano/linguagens.html"
+        >
+
+            <div class="dashboard-materia-topo">
+                <h3>📝 Linguagens</h3>
+                <span class="numero-progresso">0%</span>
+            </div>
+
+            <p>
+                Modernismo, interpretação e funções da linguagem.
+            </p>
+
+            <div class="barra-dashboard-container">
+                <div class="barra-dashboard"></div>
+            </div>
+
+            <br>
+
+            <a href="areas/3ano/linguagens.html">
+                Acessar matéria →
+            </a>
+
+        </div>
+
+
+        <div
+            class="dashboard-materia"
+            data-materia
+            data-caminho="/pages/areas/3ano/matematica.html"
+        >
+
+            <div class="dashboard-materia-topo">
+                <h3>🔢 Matemática</h3>
+                <span class="numero-progresso">0%</span>
+            </div>
+
+            <p>
+                Probabilidade, fatorial, análise combinatória e trigonometria.
+            </p>
+
+            <div class="barra-dashboard-container">
+                <div class="barra-dashboard"></div>
+            </div>
+
+            <br>
+
+            <a href="areas/3ano/matematica.html">
+                Acessar matéria →
+            </a>
+
+        </div>
+
+
+        <div
+            class="dashboard-materia"
+            data-materia
+            data-caminho="/pages/areas/3ano/natureza.html"
+        >
+
+            <div class="dashboard-materia-topo">
+                <h3>🔬 Ciências da Natureza</h3>
+                <span class="numero-progresso">0%</span>
+            </div>
+
+            <p>
+                Circuitos elétricos, NOX, eletroquímica e evolução.
+            </p>
+
+            <div class="barra-dashboard-container">
+                <div class="barra-dashboard"></div>
+            </div>
+
+            <br>
+
+            <a href="areas/3ano/natureza.html">
+                Acessar matéria →
+            </a>
+
+        </div>
+
+
+        <div
+            class="dashboard-materia"
+            data-materia
+            data-caminho="/pages/areas/3ano/humanas.html"
+        >
+
+            <div class="dashboard-materia-topo">
+                <h3>🌎 Ciências Humanas</h3>
+                <span class="numero-progresso">0%</span>
+            </div>
+
+            <p>
+                Ditadura Militar, globalização e desigualdade social.
+            </p>
+
+            <div class="barra-dashboard-container">
+                <div class="barra-dashboard"></div>
+            </div>
+
+            <br>
+
+            <a href="areas/3ano/humanas.html">
+                Acessar matéria →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <a href="../index.html" class="voltar">
+        ← Voltar para o início
+    </a>
+
+</main>
+
+<footer>
+    <p>📚 Revisão de Estudos SESI</p>
+</footer>
+
+<script src="../assets/js/script.js"></script>
+
+</body>
+</html>
